@@ -74,43 +74,55 @@
   </head>
   <body>
 
-    <div class="container">
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-       <%= link_to(image_tag("logo.png",:size => "190x190" ,:class => "brand"), root_path) %> 
+       <%= link_to(image_tag("logo.png",:size => "200x200" ,:class => "brand center-logo "), root_path) %>
       </div>
-
-      <hr>
 
       <div class="jumbotron">
-        <h1>Thanxup </h1>
+        <h1>Thanxup is coming sooon, very sooon... </h1>
         <p class="lead">Taking your boring loyalty program to a whole level!!</p>
         <a class="btn btn-large btn-success" href="#">Interested?</a>
-
       </div>
+      
 
+    <div class="container">
       <hr>
-
-      <div class="row">
+      <div class="row-fluid">
         <div class="span4">
-
-          <h2>Mobile</h2>
-          <p>No more plastic cards, just a cool app for your customers!</p>
-        
+          <div class="span6">
+            Foto
+          </div>
+          <div class="span6">
+            <h2>Mobile</h2>
+            <p>No more plastic cards, just a cool app for your customers!</p>
+          </div>
         </div>
-        <div class="span4">
-          <h2>Social</h2>
-          <p>DReward your customer that spread the word about your business, not just based on consumption </p>
 
+        <div class="span4">
+          <div class="span6 pagination-centered">
+            <%= link_to(image_tag("share.png",:size => "70x70" ,:class => "img-rounded"), root_path) %> 
+          </div>
+          <div class="span6">
+            <h2>Social</h2>
+            <p>DReward your customer that spread the word about your business, not just based on consumption </p>
+          </div>
+        </div>
+
+
+        <div class="span4">
+          <div class="span6">
+            
+          </div>
+          <div class="span6">
+            <h2>Measure</h2>
+            <p>Manage your customers online and create cupons perfectly targeted! </p>
+          </div>
        </div>
-        <div class="span4">
-          <h2>Measure</h2>
-          <p>Manage your customers online and create cupons perfectly targeted!</p>
-        </div>
 
       </div>
 
@@ -122,6 +134,7 @@
       </div>
 
     </div> <!-- /container -->
+
     <!-- Javascripts
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

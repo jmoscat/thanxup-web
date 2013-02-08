@@ -3,7 +3,8 @@ ThanxupWeb::Application.routes.draw do
   # first created -> highest priority.
 
   root :to => 'web#index'
- # match '/' => 'discount#failed'
+  match '/test' => 'web#test'
+  resources :contact
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

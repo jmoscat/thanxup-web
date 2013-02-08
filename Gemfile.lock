@@ -38,6 +38,8 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     commonjs (0.2.6)
+    contact_us (0.4.0)
+      rails (>= 3.0.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -121,6 +123,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  contact_us (~> 0.4.0)
   jquery-rails
   less-rails
   pg
