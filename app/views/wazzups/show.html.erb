@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @wazzup.name %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%= @wazzup.subject %>
+</p>
+
+<p>
+  <b>Who:</b>
+  <%= @wazzup.who %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @wazzup.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_wazzup_path(@wazzup) %> |
+<%= link_to 'Back', wazzups_path %>

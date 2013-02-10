@@ -1,0 +1,29 @@
+<h1>Listing wazzups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Subject</th>
+    <th>Who</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wazzups.each do |wazzup| %>
+  <tr>
+    <td><%= wazzup.name %></td>
+    <td><%= wazzup.subject %></td>
+    <td><%= wazzup.who %></td>
+    <td><%= wazzup.email %></td>
+    <td><%= link_to 'Show', wazzup %></td>
+    <td><%= link_to 'Edit', edit_wazzup_path(wazzup) %></td>
+    <td><%= link_to 'Destroy', wazzup, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Wazzup', new_wazzup_path %>

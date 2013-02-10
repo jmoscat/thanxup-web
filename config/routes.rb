@@ -1,10 +1,16 @@
 ThanxupWeb::Application.routes.draw do
+
+  resources :wazzups, :only => [:new, :create]
+
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   root :to => 'web#index'
   match '/test' => 'web#test'
-  resources :contact
+
+ 
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
