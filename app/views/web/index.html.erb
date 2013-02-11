@@ -72,9 +72,12 @@
       }
     </style>
   </head>
-  <body>
 
-      <div class="masthead">
+        <% if flash[:notice] %>
+        <div class="alert alert-success"><%= flash[:notice] %></div>
+      <% end %>
+  <body>
+    <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="/wazzups/new">Contact</a></li>
@@ -93,10 +96,11 @@
       <hr>
       <div class="row-fluid">
         <div class="span4">
-          <div class="span6">
-            Foto
+          <div class="span6 pagination-centered">
+            <%= image_tag("cell.png",:size => "90x90" ,:class => "img-rounded") %> 
           </div>
           <div class="span6">
+            <br >
             <h2>Mobile</h2>
             <p>No more plastic cards, just a cool app for your customers!</p>
           </div>
@@ -104,22 +108,25 @@
 
         <div class="span4">
           <div class="span6 pagination-centered">
-            <%= link_to(image_tag("share.png",:size => "70x70" ,:class => "img-rounded"), root_path) %> 
+            <%= image_tag("social.png",:size => "120x120" ,:class => "img-rounded") %> 
           </div>
           <div class="span6">
+            <br >
             <h2>Social</h2>
-            <p>DReward your customer that spread the word about your business, not just based on consumption </p>
+            <p>Reward your customer that spread the word about your business a.k.a <b>the influencers!</b></p>
           </div>
         </div>
 
 
         <div class="span4">
-          <div class="span6">
-            
+          <div class="span6 pagination-centered">
+            <br >
+            <%= image_tag("place.png",:size => "120x120" ,:class => "img-rounded") %> 
           </div>
           <div class="span6">
-            <h2>Measure</h2>
-            <p>Manage your customers online and create cupons perfectly targeted! </p>
+            <br >
+            <h2>Viral</h2>
+            <p>Attract new customer by create app-based cupons perfectly targeted!! </p>
           </div>
        </div>
 
@@ -128,7 +135,7 @@
       <hr>
 
       <div class="footer">
-        <p>&copy; Thanxup 2012   Madrid - California</p>
+        <p>&copy; Thanxup 2012 <br>(Beautiful) Madrid - (Sunny)California</p>
 
       </div>
 

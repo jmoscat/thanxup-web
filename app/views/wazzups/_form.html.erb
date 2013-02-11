@@ -1,33 +1,9 @@
-<%= form_for(@wazzup) do |f| %>
-  <% if @wazzup.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@wazzup.errors.count, "error") %> prohibited this wazzup from being saved:</h2>
 
-      <ul>
-      <% @wazzup.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for @wazzup, :html => { :class => 'form-horizontal' } do |f| %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :who %><br />
-    <%= f.text_field :who %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_field :body %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.input :name,  required: false ,label: 'Your name!' %>
+  <%= f.input :who, label: "Pls, let us know who you are.", required: false , collection: [ "Investor", "Business Owner", "Friend", "Press", "Other"] %>
+  <%= f.input :email, required: false ,placeholder: 'user@domain.com' %>
+  <%= f.input :body, as: :text ,required: false ,hint: 'Write your message here' %>
+  <%= f.button :submit %>
 <% end %>

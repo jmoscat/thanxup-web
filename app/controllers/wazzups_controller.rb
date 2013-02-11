@@ -17,8 +17,8 @@ class WazzupsController < ApplicationController
 
     respond_to do |format|
       if @wazzup.save
-        format.html { redirect_to root_path, notice: 'Your question has been sent. Thanx for your interest!' }
-        format.json { render json: @wazzup, status: :created, location: @wazzup }
+        format.html { redirect_to root_path, notice: 'Your question has been sent!' }
+
       else
         format.html { render action: "new" }
         format.json { render json: @wazzup.errors, status: :unprocessable_entity }

@@ -82,19 +82,21 @@
        <%= link_to(image_tag("logo.png",:size => "220x220" ,:class => "brand center-logo "), root_path) %>
       </div>
 
+      <div class="container">
 
+					<h1>New wazzup</h1>
 
-			<h1>New wazzup</h1>
+					<%= render 'form' %>
 
-			<%= render 'form' %>
+					<%= link_to 'Back', wazzups_path %>
 
-			<%= link_to 'Back', wazzups_path %>
-
+			</div>
 
 			 <div class="footer">
         <p>&copy; Thanxup 2012   Madrid - California</p>
 
       </div>
+
 
     <!-- Javascripts
     ================================================== -->
