@@ -1,3 +1,26 @@
 // Place all the styles related to the Wazzups controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#form-container
+{
+		color:#808080;
+  	width:315px; margin:0 auto;
+} 
+
+.container-center
+{
+	margin:0 auto;
+	width: 400px;
+	background:white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border-style:solid;
+	border-color:#92b1cd;
+}
+
+input,textarea
+{
+	 width: 300px;
+
+}

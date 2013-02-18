@@ -82,16 +82,22 @@
        <%= link_to(image_tag("logo.png",:size => "220x220" ,:class => "brand center-logo "), root_path) %>
       </div>
 
-      <div class="container">
+      <div class = "container" style = "padding-top: 40px;">
+        <div class="row">
+          <div class= "span4">
+            <%= image_tag("question.png",:size => "220x220" ,:class => "img-rounded") %>
+          </div>
 
-					<h1>New wazzup</h1>
-
-					<%= render 'form' %>
-
-					<%= link_to 'Back', wazzups_path %>
-
-			</div>
-
+          <div class= "span4">
+            <div class= "container-center">
+              <div id = "form-container">
+                <font color="#ff6e00"><center><h2>Questions?</h2></center></font>
+    					 <%= render 'form' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 			 <div class="footer">
         <p>&copy; Thanxup 2012   Madrid - California</p>
 
