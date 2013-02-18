@@ -11,6 +11,7 @@ end
 
 module ThanxupWeb
   class Application < Rails::Application
+    config.assets.paths << Rails.root.join("app", "assets", "font")
     config.action_mailer.default_url_options = {
       :host => "thanxup.com"
     }

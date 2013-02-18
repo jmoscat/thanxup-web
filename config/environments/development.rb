@@ -40,8 +40,8 @@ ThanxupWeb::Application.configure do
      :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "thanxup.com",
-      :user_name            => "jorge@thanxup.com",
-      :password             => "george144",
+      :user_name            => "whatsup@thanxup.com",
+      :password             => "1Keyword1",
       :authentication       => 'plain',
       :enable_starttls_auto => true
     }

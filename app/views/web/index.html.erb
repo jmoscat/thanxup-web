@@ -73,9 +73,7 @@
     </style>
   </head>
 
-        <% if flash[:notice] %>
-        <div class="alert alert-success"><%= flash[:notice] %></div>
-      <% end %>
+
   <body>
     <div class="masthead">
         <ul class="nav nav-pills pull-right">
@@ -85,6 +83,17 @@
        <%= link_to(image_tag("logo.png",:size => "220x220" ,:class => "brand center-logo "), root_path) %>
       </div>
 
+  <div>  
+       <% if flash[:notice] %>   
+       <center><div class = "myalert">
+        <div class="alert alert-success">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <h4>Thanx!</h4>
+          Hemos recibido tu mensaje, nos pondremos en contacto contigo lo antes posible!
+          </div>
+      </div></center>
+      <% end %>
+      
       <div class="jumbotron">
         <h1>Thanxup is coming sooon, very sooon... </h1>
         <p class="lead">Taking your boring loyalty program to a whole level!!</p>
@@ -134,12 +143,11 @@
 
       <hr>
 
-      <div class="footer">
-        <p>&copy; Thanxup 2012 <br>(Beautiful) Madrid - (Sunny)California</p>
-
-      </div>
 
     </div> <!-- /container -->
+          <div class="footer">
+        <p>&copy; Thanxup 2012 <br>(Beautiful) Madrid - (Sunny)California</p>
+        </div>
 
     <!-- Javascripts
     ================================================== -->

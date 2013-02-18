@@ -1,10 +1,9 @@
 <%= form_for(@wazzup) do |f| %>
   <% if @wazzup.errors.any? %>
-  <div id="errorExplanation">
-    <h2><%= pluralize(@post.errors.count, "error") %> prohibited
-        this question from being saved:</h2>
+  <div id="errorExplanation" style= "color:red;">
+    <h2>Hemos encontrado <%= pluralize(@wazzup.errors.count, "error") %> en el formulario</h2>
     <ul>
-    <% @post.errors.full_messages.each do |msg| %>
+    <% @wazzup.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
     <% end %>
     </ul>
@@ -21,7 +20,7 @@
   </div><br />
    <div>
     <%= f.label :Who_are_you? %>
-    <%= f.select :who, [ 'Comercio', 'Inversor', 'Otro'], :prompt => 'Dinos quien eres...si quieres' %>
+    <%= f.select :who, [ 'Comercio', 'Inversor', 'Otro']%>
     
   </div><br />
   <div>
