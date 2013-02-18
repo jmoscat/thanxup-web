@@ -21,7 +21,8 @@
   </div><br />
    <div>
     <%= f.label :Who_are_you? %>
-    <%= f.text_field :who%>
+    <%= f.select :who, [ 'Comercio', 'Inversor', 'Otro'], :prompt => 'Dinos quien eres...si quieres' %>
+    
   </div><br />
   <div>
     <%= f.label :Message %>

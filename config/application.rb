@@ -11,17 +11,6 @@ end
 
 module ThanxupWeb
   class Application < Rails::Application
-
-    config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
-      :port                 => 587,
-      :domain               => "thanxup.com",
-      :user_name            => "jorge@thanxup.com",
-      :password             => "george144",
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-    }
-
     config.action_mailer.default_url_options = {
       :host => "thanxup.com"
     }

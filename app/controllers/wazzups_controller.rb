@@ -17,6 +17,7 @@ class WazzupsController < ApplicationController
 
     respond_to do |format|
       if @wazzup.save
+        QuestionMailer.question_email(@wazzup).deliver
         format.html { redirect_to root_path, notice: 'Your question has been sent!' }
 
       else

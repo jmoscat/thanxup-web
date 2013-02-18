@@ -1,8 +1,7 @@
 class QuestionMailer < ActionMailer::Base
-  default from: "from@example.com"
-  def question_email(whatsup)
-    @user = user
-    @url  = "http://example.com/login"
-    mail(:to => user.email, :subject => "Welcome to My Awesome Site")
+ default :from => "jorgemoscat@gmail.com"  
+  def question_email(wazzup)
+  	@wazzup = wazzup
+    mail(:to => "jorgemoscat@gmail.com", :subject => "Hey Charly, nuevo mensaje de la web")
   end
 end
