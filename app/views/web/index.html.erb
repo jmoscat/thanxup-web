@@ -4,10 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "ThanxupWeb" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Thanxup" %></title>
     <%= csrf_meta_tags %>
 
-
+    <script type="text/javascript">
+      var _gaq = gaq || [];
+      _gaq.push(['_setAccount', 'UA-38672982-1']);
+      _gaq.push(['_trackPageview']);
+      (function(){
+        var ga = document.createElement('script'); ga.type = 'text/javascript';ga.async = true;
+        ga.src = ('https:'== document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsbyTagName('script')[0]; s.parentNode.insertBefore(ga,s);
+      })();
+    </script>
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
@@ -96,8 +105,8 @@
       
       <div class="jumbotron">
         <h1>Thanxup is coming sooon, very sooon... </h1>
-        <p class="lead">Taking your boring loyalty program to a whole level!!</p>
-        <a class="btn btn-large btn-success" href="/wazzups/new">Interested?</a>
+        <p class="lead">Vamos a darle la vuelta a tu aburrido programa de fidelización!!</p>
+        <a class="btn btn-large btn-success" href="/wazzups/new">Interesado?</a>
       </div>
       
 
@@ -110,8 +119,8 @@
           </div>
           <div class="span6">
             <br >
-            <h2>Mobile</h2>
-            <p>No more plastic cards, just a cool app for your customers!</p>
+            <h2>Móvil</h2>
+            <p>Ni cupones, ni tarjetas de plástico! Solo una <b><font color="#ff6e00">app</font></b> muy cool!</p>
           </div>
         </div>
 
@@ -122,7 +131,7 @@
           <div class="span6">
             <br >
             <h2>Social</h2>
-            <p>Reward your customer that spread the word about your business a.k.a <b>the influencers!</b></p>
+            <p>Recompensa a aquellos clientes que traen amigos a tu negocio, lo más <b><font color="#ff6e00">influentes</font></b> en su red social!</p>
           </div>
         </div>
 
@@ -130,12 +139,12 @@
         <div class="span4">
           <div class="span6 pagination-centered">
             <br >
-            <%= image_tag("place.png",:size => "120x120" ,:class => "img-rounded") %> 
+            <%= image_tag("gift.png",:size => "130x140" ,:class => "img-rounded") %> 
           </div>
           <div class="span6">
             <br >
-            <h2>Viral</h2>
-            <p>Attract new customer by create app-based cupons perfectly targeted!! </p>
+            <h2>A medida</h2>
+            <p>Atrae nuevos clientes con <b><font color="#ff6e00">cupones y descuentos</font></b> perfectamente diseñados y dirijidos a tu audiencia!</p>
           </div>
        </div>
 
@@ -146,7 +155,7 @@
 
     </div> <!-- /container -->
           <div class="footer">
-        <p>&copy; Thanxup 2012 <br>(Beautiful) Madrid - (Sunny)California</p>
+        <p>&copy; Thanxup 2013 - An initiative of Widehaven Ltd.</p>
         </div>
 
     <!-- Javascripts
