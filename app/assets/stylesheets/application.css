@@ -10,10 +10,13 @@
  *
  *= require_self
  *= require_tree .
+
+
+  *= require bootstrap_and_overrides
 */
 
 
- *= require bootstrap_and_overrides
+
 
 
 

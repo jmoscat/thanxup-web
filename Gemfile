@@ -6,8 +6,14 @@ gem 'rails', '3.2.2'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #Postgresql
-gem 'pg'
-gem 'postgres_ext'
+gem 'mysql2'
+
+group :production do
+	gem 'mysql2'
+end
+
+#gem 'pg'
+#gem 'postgres_ext'
 gem 'contact_us', '~> 0.4.0'
 gem 'simple_form'
 gem 'twitter-bootstrap-rails'
